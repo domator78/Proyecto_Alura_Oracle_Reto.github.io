@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Css/css.css">
+    <link rel="stylesheet" href="Css/button.css">
+
+</head>
+<body>
+    <header>
+       <img src="Imagenes/Logo.png" alt="esta imagan de logo de alura">
+    </header>
+    <main>
+       <section class="seccion1">
+        <!-- Esto campo solo permite minusculas y espacio -->
+          <textarea class="area tf w-input" id="txtCurp"  name="txtCurp"
+          maxlength="256" onkeypress="return check(event)"
+          onkeypress="return check(event)"
+          placeholder="Ingrese el texto aquí..."></textarea>
+          <div class="contenedor-botones">
+          <input type="button" class="btn-encriptar glowing-btn" value="Encriptar">
+          <input type="button" class="btn-desencriptar glowing-btn" value="Desencriptar">
+          </div>
+       </section>
+       <section class="seccion2">
+          <div class="contenedor-muneco">
+            <img src="Imagenes/Muñeco.png" alt="Esta imagen de un muñeco de pistas">
+          </div>
+          <div class="contenedor-h3">
+            <h3>Ningún mensaje fue encontrado</h3>
+          </div>
+          <div class="contenedor-p">
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          </div>
+          <div class="contenedor-resultado">
+            <h3>Mensaje Encriptado: </h3>
+            <p  id="p1"  class="texto-resultado"></p>
+          </div>
+          <div class="contenedor-copiar">
+            <input type="button" onclick="copiarAlPortapapeles('p1')" class="btn-copiar glowing-btn " value="Copiar">
+          </div>
+       </section>
+
+    </main>
+    <footer>
+   <p>Todos los derechos reservados de Lura Latam</p>
+   <p>Creado Por Cristian Camilo Posada León</p>
+    </footer>
+    <script src="Js/archivo.js">
+ 
+    </script>
+</body>
+</html>
